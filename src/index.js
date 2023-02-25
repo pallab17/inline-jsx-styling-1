@@ -2,26 +2,26 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 // using js object to style instead of inline styling -->
- const customStyle = {
-   color:"yellow",
-   fontSize:"20px",
-   border : "1px solid red"
+const customStyle = {
+  color: "yellow",
+  fontSize: "20px",
+  border: "1px solid red"
+};
 
-
- };
-
- // now suppose we want to change the color pf h1 using js object we have created i.e. customStyle --> sudden iccha holo
+// now suppose we want to change the color pf h1 using js object we have created i.e. customStyle --> sudden iccha holo
 customStyle.color = "red";
+// now this sudden iccha holo tai change korechi js object baniye
+// etar theke better option inline styling tai amra inline styling use korii
 
-
- ReactDOM.render(<h1 style={customStyle}
->Hello World!</h1>, document.getElementById("root"));
-
+ReactDOM.render(
+  <h1 style={customStyle}>Hello World!</h1>,
+  document.getElementById("root")
+);
 
 // using inline css to color h1
 // ReactDOM.render(<h1 style={{color:"red"}}
 // >Hello World!</h1>, document.getElementById("root"));
- 
+
 /*  style={{color:"red"}}
 eikhane {color:"red"} hocche ekta js object/value jeta style ke dite hobe/required by style property
 
