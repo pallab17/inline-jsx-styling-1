@@ -9,6 +9,11 @@ import ReactDOM from "react-dom";
 
 
  };
+
+ // now suppose we want to change the color pf h1 using js object we have created i.e. customStyle --> sudden iccha holo
+customStyle.color = "red";
+
+
  ReactDOM.render(<h1 style={customStyle}
 >Hello World!</h1>, document.getElementById("root"));
 
